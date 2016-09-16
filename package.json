@@ -1,0 +1,19 @@
+{
+  "name": "coldfusion-light-syntax",
+  "theme": "syntax",
+  "version": "0.0.0",
+  "description": "Bright theme with ColdFusion colored tags",
+  "keywords": [
+    "syntax",
+    "theme",
+    "ColdFusion",
+    "CFML",
+    "CFM",
+    "CFC"
+  ],
+  "repository": "https://github.com/natureglass/coldfusion-light-syntax",
+  "license": "alexdaskalakis@gmail.com",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
