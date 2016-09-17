@@ -52,12 +52,16 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
   background-color: #f5f5f5;
 }
 
-atom-text-editor::shadow {
-    .meta.tag.other.cfml,
-    .punctuation.tag.cfml,
-    .entity.name.tag.cfml {
-        color: #800000;
-    }
+atom-text-editor::shadow  .bracket-matcher .region {
+  border: 1px solid rgba(222, 149, 54, 0.6);
+  border-radius: 3px;
+  background-color: rgba(255, 217, 0, 0.3);
+  z-index: 100;
+}
+
+.comment.js,
+.punctuation.definition.comment.js {
+  color: #098c00;
 }
 
 .comment, .punctuation.definition.comment, .string.comment {
@@ -65,14 +69,15 @@ atom-text-editor::shadow {
 }
 
 .constant, .entity.name.constant, .variable.other.constant, .variable.language {
-  color: #0086b3;
+  color: #950055;
+  //font-weight: bold;
 }
 
 .keyword.operator.symbole, .keyword.other.mark {
 }
 
 .entity, .entity.name {
-  color: #795da3;
+  color: #000080;
 }
 
 .variable.parameter.function {
@@ -80,15 +85,17 @@ atom-text-editor::shadow {
 }
 
 .entity.name.tag {
-  color: #63a35c;
+  color: #0ca901;
 }
 
 .keyword {
-  color: #a71d5d;
+  color: #0000ff;
+  //font-weight: bold;
 }
 
 .storage, .storage.type {
-  color: #a71d5d;
+  color: #950055;
+  font-weight: bold;
 }
 
 .storage.modifier.package, .storage.modifier.import, .storage.type.java {
@@ -96,7 +103,7 @@ atom-text-editor::shadow {
 }
 
 .string, .punctuation.definition.string, .string .punctuation.section.embedded .source {
-  color: #183691;
+  color: #0000ff;
 }
 
 .string.unquoted.import.ada {
@@ -134,9 +141,9 @@ atom-text-editor::shadow {
 
 .invalid.illegal {
   font-style: italic;
-  text-decoration: underline;
+  //text-decoration: underline;
   color: #f8f8f8;
-  background-color: #b52a1d;
+  //background-color: #b52a1d;
 }
 
 .invalid.unimplemented {
@@ -155,7 +162,8 @@ atom-text-editor::shadow {
 }
 
 .string .variable {
-  color: #0086b3;
+  //color: #0086b3;
+  //font-weight: bold;
 }
 
 .source.regexp, .string.regexp {
@@ -181,6 +189,7 @@ atom-text-editor::shadow {
 
 .meta.module-reference {
   color: #0086b3;
+  font-weight: bold;
 }
 
 .markup.list {
@@ -232,7 +241,7 @@ atom-text-editor::shadow {
 
 .meta.diff.range {
   font-weight: bold;
-  color: #795da3;
+  color: #9468d7;
 }
 
 .meta.diff.header {
@@ -271,4 +280,59 @@ atom-text-editor::shadow {
 .constant.other.reference.link, .string.other.link {
   text-decoration: underline;
   color: #183691;
+}
+
+.entity.other.attribute-name.html {
+  color: #e19d00;
+}
+
+atom-text-editor::shadow {
+    .meta.tag.other.cfml,
+    .punctuation.tag.cfml,
+    .entity.name.tag.cfml {
+        color: #c40000;
+        font-weight: bold;
+    }
+    .string.quoted.double.cfml {
+      color: #0000ff;
+    }
+    .constant.character.hash.cfml,
+    .meta.property.object.cfml.property  {
+      color: #e50000;
+    }
+    .variable.language.scope.cfml,
+    .variable.other.object.cfml{
+      color: #e50000;
+      font-weight: bold;
+    }
+}
+
+atom-text-editor::shadow .cfml {
+  .entity.other.attribute-name.cfml {
+    color: #c40000;
+  }
+  .support.function.cfml{
+    color: #007000;
+  }
+}
+
+atom-text-editor::shadow .cfscript {
+  .keyword.operator.assignment.cfml,
+  .keyword.control.conditional.cfml {
+    color: #16b3ed;
+  }
+  .constant.numeric.cfml,
+  .variable.other.object.cfml {
+    color: #950055;
+  }
+  .keyword.operator.decision.cfml {
+    color: #c40000;
+    font-weight: bold;
+  }
+  .meta.property.object.cfml {
+    color: #950078;
+  }
+  .meta.brace.curly.cfml{
+    color: #800000;
+  }
 }
