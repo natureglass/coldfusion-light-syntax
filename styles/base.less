@@ -307,10 +307,12 @@ atom-text-editor::shadow {
     }
     .string.quoted.double.cfml {
       color: #0000ff;
+      font-style: italic;
     }
     .constant.character.hash.cfml,
     .meta.property.object.cfml.property  {
       color: #e50000;
+      font-weight: bold;
     }
     .variable.language.scope.cfml,
     .variable.other.object.cfml{
@@ -329,6 +331,13 @@ atom-text-editor::shadow .cfml {
 }
 
 atom-text-editor::shadow .cfscript {
+  .meta.group.braces.round {
+      .keyword.operator.decision.cfml{
+        color: #16b3ed;
+        font-weight: normal;
+      }
+  }
+
   .keyword.operator.assignment.cfml,
   .keyword.control.conditional.cfml {
     color: #16b3ed;
@@ -343,6 +352,7 @@ atom-text-editor::shadow .cfscript {
   }
   .meta.property.object.cfml {
     color: #950078;
+    font-weight: normal;
   }
   .meta.brace.curly.cfml{
     color: #800000;
