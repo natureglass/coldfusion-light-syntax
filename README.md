@@ -5,11 +5,11 @@
 
 ### CFML tags & cfscript ###
 
-![cfml_syntax_colors](https://cloud.githubusercontent.com/assets/22228718/18608724/84fd546e-7cf1-11e6-84bb-a4231f08f0eb.jpg)
+![cfml_syntax_colors](https://cloud.githubusercontent.com/assets/22228718/18609416/9f72619e-7d01-11e6-9071-b278d785ca36.png)
 
 ### HTML + CFML tags ###
 
-![html_cfml_syntax_colors](https://cloud.githubusercontent.com/assets/22228718/18608725/881abc54-7cf1-11e6-922b-6d7343c7f3c2.jpg)
+![html_cfml_syntax_colors](https://cloud.githubusercontent.com/assets/22228718/18609417/a2f707d4-7d01-11e6-966a-31ead472c02e.png)
 
 ### Javascript ###
 
