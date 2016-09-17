@@ -5,8 +5,12 @@
 
 ###CFML tags & cfscript###
 
-![cfml_syntax_colors](https://cloud.githubusercontent.com/assets/22228718/18607951/d82d5e74-7cdb-11e6-9fab-e455561864de.jpg)
+![cfml_syntax_colors](https://cloud.githubusercontent.com/assets/22228718/18608724/84fd546e-7cf1-11e6-84bb-a4231f08f0eb.jpg)
 
 ###HTML + CFML tags###
 
-![html_cfml_syntax_colors](https://cloud.githubusercontent.com/assets/22228718/18608194/35b2dca2-7ce3-11e6-8338-15f959654f31.jpg)
+![html_cfml_syntax_colors](https://cloud.githubusercontent.com/assets/22228718/18608725/881abc54-7cf1-11e6-922b-6d7343c7f3c2.jpg)
+
+###Javascript###
+
+![html_cfml_syntax_colors](https://cloud.githubusercontent.com/assets/22228718/18608727/8abd17b8-7cf1-11e6-98cd-0baabf103882.jpg)
