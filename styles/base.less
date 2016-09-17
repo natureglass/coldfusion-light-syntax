@@ -69,8 +69,11 @@ atom-text-editor::shadow  .bracket-matcher .region {
 }
 
 .constant, .entity.name.constant, .variable.other.constant, .variable.language {
-  color: #950055;
-  //font-weight: bold;
+  color: #b9006a;
+}
+
+.constant.js {
+  font-weight: bold;
 }
 
 .keyword.operator.symbole, .keyword.other.mark {
@@ -96,7 +99,7 @@ atom-text-editor::shadow  .bracket-matcher .region {
 }
 
 .storage, .storage.type {
-  color: #950055;
+  color: #b9006a;
   font-weight: bold;
 }
 
@@ -255,6 +258,7 @@ atom-text-editor::shadow  .bracket-matcher .region {
   color: #1d3e81;
 }
 
+.meta.arguments,
 .meta.output {
   color: #1d3e81;
 }
@@ -288,17 +292,18 @@ atom-text-editor::shadow  .bracket-matcher .region {
   color: #e19d00;
 }
 
-.source.cfscript,
-.meta.scope.cfquery.cfml {
-  color: #640000;
-}
-
 atom-text-editor::shadow {
     .meta.tag.other.cfml,
     .punctuation.tag.cfml,
     .entity.name.tag.cfml {
         color: #c40000;
         font-weight: bold;
+    }
+    .meta.scope.cfquery.cfml {
+      color: #730000;
+    }
+    .meta.tag.cfml .source.cfscript {
+      color: #c40000;
     }
     .string.quoted.double.cfml {
       color: #0000ff;
@@ -330,7 +335,7 @@ atom-text-editor::shadow .cfscript {
   }
   .constant.numeric.cfml,
   .variable.other.object.cfml {
-    color: #950055;
+    color: #b9006a;
   }
   .keyword.operator.decision.cfml {
     color: #c40000;
@@ -350,5 +355,67 @@ atom-text-editor::shadow .meta.scope.cfoutput.cfml {
     color: #950078;
     text-decoration: none;
     background-color: transparent;
+  }
+}
+
+atom-text-editor::shadow {
+
+  .entity.other.attribute-name.id.css {
+    .punctuation.definition.entity.css {
+      color: #3f7f7f;
+    }
+  }
+
+  .entity.other.attribute-name.class.css {
+    .punctuation.definition.entity.css {
+      color: #3f7f7f;
+    }
+  }
+  .entity.other.attribute-name,
+  .entity.name.tag.css{
+    color: #3f7f7f;
+  }
+
+  .entity.name.tag.css {
+    font-weight: bold;
+  }
+
+  .support.type.property-name.css{
+    color: #950078;
+  }
+
+  .constant.numeric.css {
+    color: ##0086b3;
+  }
+
+  .constant.numeric.css {
+    font-weight: bold;
+  }
+
+  .constant.numeric.css .keyword.other.unit.css {
+    color: #950078;
+    font-weight: normal;
+  }
+
+  .comment.block.css,
+  .punctuation.definition.comment.css {
+    color: #9993df;
+  }
+
+  .source.css {
+
+    .meta.at-rule.media.css {
+      color: #ff0000;
+    }
+
+    .support.type.property-name.media.css {
+      color: #ff0000;
+    }
+
+    .support.constant.media.css {
+      color: #0000ff;
+      font-weight: bold;
+    }
+
   }
 }
