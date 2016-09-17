@@ -84,6 +84,8 @@ atom-text-editor::shadow  .bracket-matcher .region {
   color: #333;
 }
 
+.punctuation.definition.tag.end.html,
+.punctuation.definition.tag.begin.html,
 .entity.name.tag {
   color: #0ca901;
 }
@@ -141,9 +143,9 @@ atom-text-editor::shadow  .bracket-matcher .region {
 
 .invalid.illegal {
   font-style: italic;
-  //text-decoration: underline;
-  color: #f8f8f8;
-  //background-color: #b52a1d;
+  text-decoration: underline;
+  color: #9468d7;
+  background-color: #b52a1d;
 }
 
 .invalid.unimplemented {
@@ -286,6 +288,11 @@ atom-text-editor::shadow  .bracket-matcher .region {
   color: #e19d00;
 }
 
+.source.cfscript,
+.meta.scope.cfquery.cfml {
+  color: #640000;
+}
+
 atom-text-editor::shadow {
     .meta.tag.other.cfml,
     .punctuation.tag.cfml,
@@ -312,7 +319,7 @@ atom-text-editor::shadow .cfml {
     color: #c40000;
   }
   .support.function.cfml{
-    color: #007000;
+    color: #00a300;
   }
 }
 
@@ -334,5 +341,14 @@ atom-text-editor::shadow .cfscript {
   }
   .meta.brace.curly.cfml{
     color: #800000;
+  }
+}
+
+atom-text-editor::shadow .meta.scope.cfoutput.cfml {
+  color: #950078;
+  .invalid.illegal.bad-ampersand.html{
+    color: #950078;
+    text-decoration: none;
+    background-color: transparent;
   }
 }
