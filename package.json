@@ -1,7 +1,7 @@
 {
   "name": "coldfusion-light-syntax",
   "theme": "syntax",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Bright theme with ColdFusion colored tags",
   "keywords": [
     "syntax",
