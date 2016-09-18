@@ -1,5 +1,5 @@
 # ColdFusion Light Syntax Theme for Atom Editor
-## inspired from CFeclipse ##
+## inspired by CFeclipse ##
 
 >This theme should work with most of UI Packages
 

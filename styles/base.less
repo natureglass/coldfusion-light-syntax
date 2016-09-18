@@ -288,6 +288,20 @@ atom-text-editor::shadow  .bracket-matcher .region {
   color: #183691;
 }
 
+/* ************************ */
+/* ****** HTML STYLE ****** */
+/* ************************ */
+
+atom-text-editor::shadow {
+  .entity.other.attribute-name.html {
+    color: #ea9d00;
+  }
+}
+
+/* ************************ */
+/* ****** CFML STYLE ****** */
+/* ************************ */
+
 atom-text-editor::shadow {
     .meta.tag.other.cfml,
     .punctuation.tag.cfml,
@@ -295,21 +309,44 @@ atom-text-editor::shadow {
         color: #c40000;
         font-weight: bold;
     }
+    .source.cfscript,
     .meta.scope.cfquery.cfml {
       color: #730000;
     }
+    .meta.brace.square.cfml,
+    .punctuation.separator.key-value.cfml,
+    .punctuation.definition.string.begin.cfml,
+    .punctuation.definition.string.end.cfml,
     .meta.tag.cfml .source.cfscript {
       color: #c40000;
     }
+
+    .meta.for.cfml {
+      .keyword.control.loop.cfml {
+        color: #16b3ed;
+      }
+    }
+
+    .meta.switch.cfml {
+      .keyword.control.loop.cfml,
+      .keyword.control.switch.cfml {
+        color: #b9006a;
+        font-weight: bold;
+      }
+    }
+
+    .keyword.operator.logical.cfml {
+      color: #0000ff;
+      font-weight: bold;
+    }
+
     .string.quoted.double.cfml {
       color: #0000ff;
       font-style: italic;
     }
+    .keyword.operator.accessor.cfml,
     .constant.character.hash.cfml,
-    .meta.property.object.cfml.property  {
-      color: #e50000;
-      font-weight: bold;
-    }
+    .meta.property.object.cfml.property,
     .variable.language.scope.cfml,
     .variable.other.object.cfml{
       color: #e50000;
@@ -334,20 +371,31 @@ atom-text-editor::shadow .cfscript {
       }
   }
 
-  .keyword.operator.assignment.cfml,
+  .meta.group.braces.curly {
+    .meta.brace.curly.cfml {
+      color: #b9006a;
+      font-weight: normal;
+    }
+  }
+
+  .keyword.operator.assignment.cfml {
+    color: #c40000;
+  }
+
   .keyword.control.conditional.cfml {
     color: #16b3ed;
   }
   .constant.numeric.cfml,
-  .variable.other.object.cfml {
-    color: #b9006a;
+  .variable.other.object.cfml,
+  .variable.other.constant.cfml {
+    color: #e50000;
   }
   .keyword.operator.decision.cfml {
     color: #c40000;
     font-weight: bold;
   }
   .meta.property.object.cfml {
-    color: #950078;
+    color: #e50000;
     font-weight: normal;
   }
   .meta.brace.curly.cfml{
@@ -355,14 +403,38 @@ atom-text-editor::shadow .cfscript {
   }
 }
 
-atom-text-editor::shadow .meta.scope.cfoutput.cfml {
-  color: #950078;
-  .invalid.illegal.bad-ampersand.html{
-    color: #950078;
-    text-decoration: none;
-    background-color: transparent;
+atom-text-editor::shadow .text.html.cfml {
+  //color: #950078;
+  .meta.scope.cfoutput.cfml {
+    .invalid.illegal.bad-ampersand.html {
+      color: #950078;
+      text-decoration: none;
+      background-color: transparent;
+    }
   }
 }
+
+/* ************************ */
+/* ****** SQL STYLE ****** */
+/* ************************ */
+
+atom-text-editor::shadow {
+  .constant.numeric.sql,
+  .keyword.other.DML.sql,
+  .keyword.other.DDL.create.II.sql,
+  .keyword.operator.comparison.sql,
+  .keyword.other.data-integrity.sql {
+    color: #0000ff;
+    font-weight: bold;
+  }
+  .constant.other.database-name.sql {
+    background-color: #fff8ff;
+  }
+}
+
+/* *********************** */
+/* ****** CSS STYLE ****** */
+/* *********************** */
 
 atom-text-editor::shadow {
 
@@ -423,11 +495,5 @@ atom-text-editor::shadow {
       font-weight: bold;
     }
 
-  }
-}
-
-atom-text-editor::shadow {
-  .entity.other.attribute-name.html {
-    color: #e19d00;
   }
 }
