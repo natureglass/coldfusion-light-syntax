@@ -3,9 +3,13 @@
 
 >This theme should work with most of UI Packages
 
-### CFML tags & cfscript ###
+### CFML & SQL ###
 
-![cfml_syntax_colors](https://cloud.githubusercontent.com/assets/22228718/18609416/9f72619e-7d01-11e6-9071-b278d785ca36.png)
+![cfml_syntax_colors](https://cloud.githubusercontent.com/assets/22228718/18615246/0bacfe6e-7da2-11e6-8e28-aa8568efdd3d.png)
+
+### CFSCRIPT ###
+
+![cfscript_syntax_colors](https://cloud.githubusercontent.com/assets/22228718/18615253/29db0a70-7da2-11e6-9200-824a887cea32.png)
 
 ### HTML + CFML tags ###
 
