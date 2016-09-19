@@ -1,0 +1,48 @@
+// Pane tab
+@pane-tab-selector:      ~'atom-pane .tab-bar .tab .title[data-path]';
+@pane-tab-temp-selector: ~'atom-pane .tab-bar .tab.temp .title[data-path]';
+@pane-tab-override:      ~'.file-icons-tab-pane-icon @{pane-tab-selector}';
+
+@{pane-tab-selector}:before {
+  margin-right: 5px;
+  vertical-align: top;
+
+  // For better visualisation in Mac OS
+  -webkit-font-smoothing: antialiased;
+}
+
+@{pane-tab-temp-selector}:before {
+  font-style: normal;
+}
+
+.cf_icon_pos {
+    background-repeat:no-repeat;
+    background-position: center center;
+    content: "\00a0\00a0\00a0\00a0\00a0";
+}
+
+.file-icons-tab-pane-icon @{pane-tab-selector},
+.icon-file-text,
+.icon-file-binary,
+.theme-flatland-dark-ui .icon-file-text,
+.theme-flatland-dark-ui .icon-book {
+
+  // Cfc
+  &[data-name$=".cfc"]:before { background-image:url('atom://coldfusion-light-syntax/icons/CFcfc.png'); .cf_icon_pos; }
+
+  // Cfm
+  &[data-name$=".cfm"]:before { background-image:url('atom://coldfusion-light-syntax/icons/CFcfm.png'); .cf_icon_pos; }
+
+  // Cfml
+  &[data-name$=".cfml"]:before { background-image:url('atom://coldfusion-light-syntax/icons/CFcfml.png'); .cf_icon_pos; }
+
+}
+
+// Forcefully show icons
+body.file-icons-force-show-icons {
+  .tree-view .entry > .header > .name:before,
+  .tree-view .entry > .name:before {
+    display: inherit;
+    content:  inherit;
+  }
+}
