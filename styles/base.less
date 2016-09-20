@@ -1,5 +1,11 @@
 @import "syntax-variables";
 
+@font-face {
+  font-family: code;
+  font-style: regular;
+  src: url('fonts/Consolas.ttf');
+}
+
 atom-text-editor, :host {
   background-color: @syntax-background-color;
   color: @syntax-text-color;
@@ -49,13 +55,14 @@ atom-text-editor.is-focused .selection .region, :host(.is-focused) .selection .r
 }
 
 atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-editor.is-focused .line.cursor-line, :host(.is-focused) .line-number.cursor-line-no-selection, :host(.is-focused) .line.cursor-line {
-  background-color: #f5f5f5;
+  background-color: #e8f2fe;
+  box-shadow: 0px 1px 0px 1px #d7eaff;
 }
 
 atom-text-editor::shadow  .bracket-matcher .region {
-  border: 1px solid rgba(222, 149, 54, 0.6);
+  border: 1px solid rgba(102, 167, 232, 0.5);
   border-radius: 3px;
-  background-color: rgba(255, 217, 0, 0.3);
+  background-color: rgba(209, 232, 255, 0.3);
   z-index: 100;
 }
 
@@ -69,7 +76,7 @@ atom-text-editor::shadow  .bracket-matcher .region {
 }
 
 .constant, .entity.name.constant, .variable.other.constant, .variable.language {
-  color: #b9006a;
+  color: #8a0000;
 }
 
 .constant.js {
@@ -87,10 +94,12 @@ atom-text-editor::shadow  .bracket-matcher .region {
   color: #333;
 }
 
+.punctuation.definition.tag.html,
 .punctuation.definition.tag.end.html,
 .punctuation.definition.tag.begin.html,
 .entity.name.tag {
-  color: #0ca901;
+  color: #4e51b2;
+  font-weight: bold;
 }
 
 .keyword {
@@ -99,7 +108,7 @@ atom-text-editor::shadow  .bracket-matcher .region {
 }
 
 .storage, .storage.type {
-  color: #b9006a;
+  color: #99005d;
   font-weight: bold;
 }
 
@@ -294,7 +303,7 @@ atom-text-editor::shadow  .bracket-matcher .region {
 
 atom-text-editor::shadow {
   .entity.other.attribute-name.html {
-    color: #ea9d00;
+    color: #e68819;
   }
 }
 
@@ -306,12 +315,12 @@ atom-text-editor::shadow {
     .meta.tag.other.cfml,
     .punctuation.tag.cfml,
     .entity.name.tag.cfml {
-        color: #c40000;
+        color: #8a0000;
         font-weight: bold;
     }
     .source.cfscript,
     .meta.scope.cfquery.cfml {
-      color: #730000;
+      color: #000000;
     }
     .meta.brace.square.cfml,
     .punctuation.separator.key-value.cfml,
@@ -330,7 +339,7 @@ atom-text-editor::shadow {
     .meta.switch.cfml {
       .keyword.control.loop.cfml,
       .keyword.control.switch.cfml {
-        color: #b9006a;
+        color: #99005d;
         font-weight: bold;
       }
     }
@@ -356,7 +365,8 @@ atom-text-editor::shadow {
 
 atom-text-editor::shadow .cfml {
   .entity.other.attribute-name.cfml {
-    color: #c40000;
+    color: #8a0000;
+    font-weight: bold;
   }
   .meta.support.function-call.cfml,
   .support.function.cfml{
@@ -374,7 +384,7 @@ atom-text-editor::shadow .cfscript {
 
   .meta.group.braces.curly {
     .meta.brace.curly.cfml {
-      color: #b9006a;
+      color: #99005d;
       font-weight: normal;
     }
   }
@@ -400,7 +410,7 @@ atom-text-editor::shadow .cfscript {
     font-weight: normal;
   }
   .meta.brace.curly.cfml{
-    color: #800000;
+    color: #8a0000;
   }
 }
 
@@ -421,6 +431,7 @@ atom-text-editor::shadow .text.html.cfml {
 
 atom-text-editor::shadow {
   .constant.numeric.sql,
+  .keyword.other.alias.sql,
   .keyword.other.DML.sql,
   .keyword.other.DDL.create.II.sql,
   .keyword.operator.comparison.sql,
@@ -429,7 +440,8 @@ atom-text-editor::shadow {
     font-weight: bold;
   }
   .constant.other.database-name.sql {
-    background-color: #fff8ff;
+    //background-color: #fff8ff;
+    font-weight: bold;
   }
 }
 
@@ -497,4 +509,8 @@ atom-text-editor::shadow {
     }
 
   }
+}
+
+.keyword.control.js {
+  color: #99005d;
 }
