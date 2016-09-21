@@ -21,8 +21,8 @@
 
 ### JAVASCRIPT ###
 
-![html_cfml_syntax_colors](https://cloud.githubusercontent.com/assets/22228718/18608727/8abd17b8-7cf1-11e6-98cd-0baabf103882.jpg)
+![html_cfml_syntax_colors](https://cloud.githubusercontent.com/assets/22228718/18706580/e99d3a5c-7ff2-11e6-8dd2-8404f1999168.png)
 
 ### CSS ###
 
-![html_cfml_syntax_colors](https://cloud.githubusercontent.com/assets/22228718/18609150/2c4be0b0-7cfb-11e6-987c-6c147d0a600d.jpg)
+![html_cfml_syntax_colors](https://cloud.githubusercontent.com/assets/22228718/18706582/ec3d808c-7ff2-11e6-9359-d0b34f521748.png)
