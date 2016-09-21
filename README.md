@@ -1,5 +1,5 @@
 # ColdFusion Light Syntax Theme for Atom Editor
-## Inspired by CFeclipse ##
+## Inspired by Eclipse + CFeclipse ##
 
 >This theme should work with most of UI Packages
 
@@ -9,15 +9,15 @@
 
 ### CFML & SQL ###
 
-![cfml_syntax_colors](https://cloud.githubusercontent.com/assets/22228718/18615246/0bacfe6e-7da2-11e6-8e28-aa8568efdd3d.png)
+![cfml_syntax_colors](https://cloud.githubusercontent.com/assets/22228718/18700493/da878a74-7fd7-11e6-80fe-377b1c12f984.png)
 
 ### CFSCRIPT ###
 
-![cfscript_syntax_colors](https://cloud.githubusercontent.com/assets/22228718/18615253/29db0a70-7da2-11e6-9200-824a887cea32.png)
+![cfscript_syntax_colors](https://cloud.githubusercontent.com/assets/22228718/18700498/de14940c-7fd7-11e6-99c2-353dd781dc73.png)
 
 ### HTML + CFML tags ###
 
-![html_cfml_syntax_colors](https://cloud.githubusercontent.com/assets/22228718/18609417/a2f707d4-7d01-11e6-966a-31ead472c02e.png)
+![html_cfml_syntax_colors](https://cloud.githubusercontent.com/assets/22228718/18700489/d3e052e6-7fd7-11e6-83c2-e0c6bbcfe22c.png)
 
 ### JAVASCRIPT ###
 
