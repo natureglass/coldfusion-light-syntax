@@ -1,7 +1,7 @@
 # ColdFusion Light Syntax Theme for Atom Editor
 ## Inspired by Eclipse + CFeclipse ##
 
->This theme should work with most of UI Packages
+>This theme should work with most of UI Packages (Best with One Light UI)
 
 #### File Tree CF Icons ####
 
