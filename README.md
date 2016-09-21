@@ -1,7 +1,7 @@
 # ColdFusion Light Syntax Theme for Atom Editor
 ## Inspired by Eclipse + CFeclipse ##
 
-** This Theme to work, you will need to installed _https://atom.io/packages/language-cfml_**
+*You will need _https://atom.io/packages/language-cfml_ to make this Theme work!*
 
 >This theme should work with most of UI Packages!
 
