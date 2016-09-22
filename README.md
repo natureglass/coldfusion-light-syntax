@@ -3,7 +3,7 @@
 
 *You will need _https://atom.io/packages/language-cfml_ to be installed!*
 
->This theme should work with most of UI Packages **(Best with Atom Dark & Atom Light)**
+>This theme should work with most of UI Packages!
 
 #### File Tree CF Icons ####
 
