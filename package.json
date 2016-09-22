@@ -1,7 +1,7 @@
 {
   "name": "coldfusion-light-syntax",
   "theme": "syntax",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "description": "Clean day theme inspired by Eclipse + CFeclipse",
   "keywords": [
     "eclipse",
